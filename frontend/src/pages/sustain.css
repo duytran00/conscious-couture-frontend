@@ -1,0 +1,314 @@
+/* ============================
+   SUSTAINABILITY PAGE STYLES
+   Modern responsive design with brand colors
+   ============================ */
+
+/* ====== BASE CONTAINER ====== */
+
+.sustain-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* ====== HERO SECTION ====== */
+
+.sustain-hero {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.sustain-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sustain-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.sustain-hero p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== SECTION STYLING ====== */
+
+.impact-section,
+.info-sections {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== IMPACT CARDS GRID ====== */
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* ====== IMPACT CARD ====== */
+
+.impact-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.impact-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.impact-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover .impact-card-image img {
+  transform: scale(1.05);
+}
+
+.impact-card-content {
+  padding: 1.5rem;
+}
+
+.impact-card-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}
+
+.impact-card-content p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.impact-card-source {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  padding: 0.25rem 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+/* ====== INFO SECTIONS ====== */
+
+.info-sections {
+  background-color: #ecfdf5;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #10b981;
+  transition: box-shadow 0.3s ease;
+}
+
+.info-section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #059669;
+  margin: 0 0 1rem 0;
+}
+
+.info-section p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ====== CALL TO ACTION ====== */
+
+.sustain-cta {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem 0;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .sustain-hero h1 {
+    font-size: 2rem;
+  }
+
+  .sustain-hero p {
+    font-size: 1.1rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .impact-section,
+  .info-sections {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sustain-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .sustain-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .sustain-hero p {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  .impact-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .impact-card-image {
+    height: 180px;
+  }
+
+  .impact-card-content {
+    padding: 1.25rem;
+  }
+
+  .impact-card-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .info-section {
+    padding: 1.5rem;
+  }
+
+  .sustain-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .sustain-hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .sustain-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .impact-section,
+  .info-sections {
+    padding: 2.5rem 1rem;
+  }
+
+  .impact-card-image {
+    height: 160px;
+  }
+
+  .impact-card-content {
+    padding: 1rem;
+  }
+
+  .info-section {
+    padding: 1.25rem;
+  }
+}

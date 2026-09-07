@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Amazon-specific design tokens */
+:root {
+  --amazon-navy: #131921;
+  --amazon-blue: #007185;
+  --amazon-orange: #FFD814;
+  --amazon-orange-hover: #F7CA00;
+  --amazon-link: #007185;
+  --amazon-border: #DDD;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px; /* Standard Amazon density */
+  background-color: #EAEDED; /* Amazon light gray background */
+  color: #111;
+}
+
+/* Force standard Amazon Button look globally */
+.btn-amazon-primary {
+  background: #FFD814;
+  border: 1px solid #FCD200;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.btn-amazon-primary:hover {
+  background: #F7CA00;
+  border-color: #F2C200;
+}
+
+.btn-amazon-secondary {
+  background: #FFF;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+/* Amazon specific links */
+a, .link-blue {
+  color: #007185 !important;
+  text-decoration: none;
+}
+
+a:hover, .link-blue:hover {
+  color: #C40000 !important;
+  text-decoration: underline !important;
+}

@@ -1,0 +1,141 @@
+/* SustainabilityMetrics.css - Sanitized for contrast and readability */
+
+.sustainability-metrics {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 50%, #f0f9ff 100%);
+  border: 1px solid #d1fae5;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Loading Animation */
+.sustainability-loading {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%);
+  border: 1px solid #a7f3d0;
+  border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.loading-spinner {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.spinner-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-ring.primary {
+  border-top-color: #10b981;
+  border-right-color: #10b981;
+}
+
+.spinner-ring.secondary {
+  border-top-color: #06b6d4;
+  border-left-color: #06b6d4;
+  animation-delay: 0.1s;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Icons */
+.header-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: linear-gradient(135deg, #34d399 0%, #14b8a6 100%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+}
+
+.title-icon {
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+
+.card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-co2 { background: linear-gradient(135deg, #34d399 0%, #10b981 100%); }
+.icon-water { background: linear-gradient(135deg, #22d3ee 0%, #0891b2 100%); }
+.icon-energy { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
+
+/* Impact Percentage */
+.percentage-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Call to Action */
+.cta-section {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 50%, #cffafe 100%);
+  border: 1px solid #10b981;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-emoji {
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+.section-icon {
+  transition: transform 0.2s ease;
+}
+
+.section-icon.expanded {
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sustainability-metrics { padding: 1.5rem; }
+  .header-content { margin-left: 0; margin-top: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-spinner .spinner-ring,
+  .cta-emoji {
+    animation: none;
+  }
+}
